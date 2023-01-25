@@ -17,7 +17,7 @@ export const Footer = () => {
   <div className="box-container">
 
       <div className="box">
-          <h3>Kamlesh's Portfolio</h3>
+          <h3>Anubha's Portfolio</h3>
           <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
       </div>
 
