@@ -46,7 +46,7 @@ export const Footer = () => {
       </div>
   </div>
 
-  {/* <h1 className="credit">Designed with <i className="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1> */}
+  <h1 className="credit">Want your own portfolio? <a href="mailto:kamleshmundel18@gmail.com"> Contact Developer</a></h1>
 
 </section>
     )
