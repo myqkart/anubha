@@ -8,6 +8,7 @@ import schoolImg from './assets/images/educat/school.jpeg';
 // images for projects
 import activityPlan from './assets/images/projects/project1.jpeg'
 import resumeFilter from './assets/images/projects/resume-filter.jpeg'
+import weatherMan from './assets/images/projects/weatherman.jpeg'
 
 export const PERSON = {
   first_name: "Anubha",
@@ -111,7 +112,7 @@ export const PERSON = {
       REACT framework which uses node modules for its proper functioning. It is an open-source 
       framework more popular for single-page applications. It also uses HTML, CSS, Bootstrap and 
       Javascript for proper display and functioning. It uses API Integration for backend purpose.`,
-      image: resumeFilter,
+      image: weatherMan,
       category: 1, // MARN
     },
     {
