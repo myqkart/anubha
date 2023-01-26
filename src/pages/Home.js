@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImg from "../assets/images/hero1.png";
+import heroImg from "../assets/images/avatar.jpg";
 import { PERSON } from "../profile.data";
 
 export const Home = () => {
