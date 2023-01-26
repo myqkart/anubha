@@ -120,7 +120,7 @@ export const PERSON = {
       desc: `We designed a technical project in a team of 5 by using HTML5, CSS, JavaScript. Project was 
       based on the fact that we have number if resumes and our site help to filter the necessary details 
       and represent it in a tabular format with a column containing link to each resume.`,
-      image: resumeFilter,
+      image: activityPlan,
       category: 2, // MARN
     },
     {
@@ -129,7 +129,7 @@ export const PERSON = {
       make their work efficient by providing proper tools for planning, making strategies and for 
       activities that can help them to accomplish their task. I have used VS Code Editor, MongoDB, 
       Express, ReactJS, NodeJS in this project.`,
-      image: activityPlan,
+      image: resumeFilter,
       category: 1, // MEAN
     },
   ],
