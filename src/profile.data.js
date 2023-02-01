@@ -28,14 +28,14 @@ export const PERSON = {
     insta: "https://instagram.com/angelkvines?igshid=ZmZhODViOGI=/",
   },
   education: {
-    college: {
+    college: [{
       name: "Jodhpur Institute Of Engineering & Technology",
       degree: "Bachelor Of Technology",
       field: "Computer science",
       year: "2018-2022",
       status: "Completed",
       image: collegeImg,
-    },
+    }],
     school: [
       {
         name: "Delhi Public School",
