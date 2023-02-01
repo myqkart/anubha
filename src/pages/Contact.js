@@ -12,27 +12,28 @@ import { ENV } from "../environment/enviromentt";
 import { checkMsg, checkNumber, emailValidator, onlyChars } from "../shared/services/validators.service";
 import loader from '../assets/images/preloader.gif';
 
+const initFormData = {name: '', email: '', num: '', msg: ''};
+
 export const Contact = () => {
   const form = useRef();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const initFormData = {name: '', email: '', num: '', msg: ''}
-  const [formData, setFormData] = useState(initFormData)
-  const [errData, setErrData] = useState(initFormData)
-  const [showLoader, setShowLoader] = useState(false)
+  const [formData, setFormData] = useState(initFormData);
+  const [errData, setErrData] = useState(initFormData);
+  const [showLoader, setShowLoader] = useState(false);
 
-  const handleChange = ({target : { name, value}}) => setFormData((pre) => ({...pre, [name]: value}))
+  const handleChange = ({target : { name, value}}) => setFormData((pre) => ({...pre, [name]: value}));
 
   const checkError = (form) => {
     const errors = {
       name: onlyChars(form), email: emailValidator(form),
       num: checkNumber(form), msg: checkMsg(form),
     }
-    setErrData((pre) => ({...pre, ...errors}))
+    setErrData((pre) => ({...pre, ...errors}));
 
     let errCount = 0;
-    Object.keys(errors).map((e) => errCount += (errors[e] ? 1 : 0) )
-    if(errCount) setShowLoader(false)
+    Object.keys(errors).map((e) => errCount += (errors[e] ? 1 : 0) );
+    if(errCount) setShowLoader(false);
     return errCount ? true : false;
   }
 
@@ -54,9 +55,9 @@ export const Contact = () => {
 
     return (
       <div>
-              <Modal isOpen={showLoader} onRequestClose={() => setIsOpen(false)} contentLabel="Example Modal" className="model">
-                <img className="model-img" draggable="false" src={loader} alt=""/>
-              </Modal>
+        <Modal isOpen={showLoader} onRequestClose={() => setIsOpen(false)} contentLabel="Example Modal" className="model">
+          <img className="model-img" draggable="false" src={loader} alt=""/>
+        </Modal>
         <section className="contact" id="contact">
           <h2 className="heading"><i className="fas fa-headset"></i> Get in <span>Touch</span></h2>
           <div className="container">
@@ -101,5 +102,5 @@ export const Contact = () => {
       </section>
       <Footer/>
     </div>
-  )
-}
+  );
+};
