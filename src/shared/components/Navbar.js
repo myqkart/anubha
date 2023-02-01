@@ -29,7 +29,7 @@ export const Navbar = () => {
   return (
     <header>
       <NavLink to="/" className="logo">
-        <i className="fab fa-node-js"></i> Anubha Kansal
+        <i className="fab fa-react"></i> Anubha Kansal
       </NavLink>
       <div id="menu" className={`fas fa-${isActive ? "times" : "bars"}`} onClick={toggleClass} ></div>
       <nav className={`navbar ${isActive ? "nav-toggle" : ""}`}>

@@ -6,10 +6,9 @@ import collegeImg from './assets/images/educat/college1.png';
 import schoolImg from './assets/images/educat/school.jpeg';
 
 // images for projects
-import tutorac from './assets/images/projects/tutorac.png'
-import getlitt from './assets/images/projects/getlitt.png'
-import employee from './assets/images/projects/employee.png'
-import portfolio from './assets/images/projects/portfolio1.PNG'
+import activityPlan from './assets/images/projects/project1.jpeg'
+import resumeFilter from './assets/images/projects/resume-filter.jpeg'
+import weatherMan from './assets/images/projects/weatherman.jpeg'
 
 export const PERSON = {
   first_name: "Anubha",
@@ -113,7 +112,7 @@ export const PERSON = {
       REACT framework which uses node modules for its proper functioning. It is an open-source 
       framework more popular for single-page applications. It also uses HTML, CSS, Bootstrap and 
       Javascript for proper display and functioning. It uses API Integration for backend purpose.`,
-      image: tutorac,
+      image: weatherMan,
       category: 1, // MARN
     },
     {
@@ -121,7 +120,7 @@ export const PERSON = {
       desc: `We designed a technical project in a team of 5 by using HTML5, CSS, JavaScript. Project was 
       based on the fact that we have number if resumes and our site help to filter the necessary details 
       and represent it in a tabular format with a column containing link to each resume.`,
-      image: portfolio,
+      image: activityPlan,
       category: 2, // MARN
     },
     {
@@ -130,7 +129,7 @@ export const PERSON = {
       make their work efficient by providing proper tools for planning, making strategies and for 
       activities that can help them to accomplish their task. I have used VS Code Editor, MongoDB, 
       Express, ReactJS, NodeJS in this project.`,
-      image: getlitt,
+      image: resumeFilter,
       category: 1, // MEAN
     },
   ],

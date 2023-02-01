@@ -16,31 +16,31 @@ const SocialList = ({data}) => {
 export const Footer = () => {
     return (
         <section className="footer">
-          <div className="box-container">
-            <div className="box">
-                <h3>Kamlesh's Portfolio</h3>
-                <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-            </div>
-            <div className="box">
-                <h3>quick links</h3>
-                <Link to="/home"><i className="fas fa-chevron-circle-right"></i> home</Link>
-                <Link to="/about"><i className="fas fa-chevron-circle-right"></i> about</Link>
-                <Link to="/skills"><i className="fas fa-chevron-circle-right"></i> skills</Link>
-                <Link to="/education"><i className="fas fa-chevron-circle-right"></i> education</Link>
-                <Link to="/work"><i className="fas fa-chevron-circle-right"></i> work</Link>
-                <Link to="/experience"><i className="fas fa-chevron-circle-right"></i> experience</Link>
-            </div>
-            <div className="box">
-                <h3>contact info</h3>
-                {/* <p> <i className="fas fa-phone"></i>{PERSON.number}</p> */}
-                <p> <i className="fas fa-envelope"></i>{PERSON.email}</p>
-                <p> <i className="fas fa-map-marked-alt"></i>{PERSON.current_place.city}, {PERSON.current_place.country} - {PERSON.current_place.pincode}</p>
-                <div className="share">
-                { socialData.map((data, i) => <SocialList data={data} key={i} />) }
+            <div className="box-container">
+                <div className="box">
+                    <h3>Anubha's Portfolio</h3>
+                    <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+                </div>
+                <div className="box">
+                    <h3>quick links</h3>
+                    <Link to="/home"><i className="fas fa-chevron-circle-right"></i> home</Link>
+                    <Link to="/about"><i className="fas fa-chevron-circle-right"></i> about</Link>
+                    <Link to="/skills"><i className="fas fa-chevron-circle-right"></i> skills</Link>
+                    <Link to="/education"><i className="fas fa-chevron-circle-right"></i> education</Link>
+                    <Link to="/work"><i className="fas fa-chevron-circle-right"></i> work</Link>
+                    <Link to="/experience"><i className="fas fa-chevron-circle-right"></i> experience</Link>
+                </div>
+                <div className="box">
+                    <h3>contact info</h3>
+                    {/* <p> <i className="fas fa-phone"></i>{PERSON.number}</p> */}
+                    <p> <i className="fas fa-envelope"></i>{PERSON.email}</p>
+                    <p> <i className="fas fa-map-marked-alt"></i>{PERSON.current_place.city}, {PERSON.current_place.country} - {PERSON.current_place.pincode}</p>
+                    <div className="share">
+                        { socialData.map((data, i) => <SocialList data={data} key={i} />) }
+                    </div>
                 </div>
             </div>
-        </div>
-        {/* <h1 className="credit">Designed with <i className="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1> */}
+            <h1 className="credit">Want your own portfolio? <a href="mailto:kamleshmundel18@gmail.com"> Contact Developer</a></h1>
         </section>
     )
 }
